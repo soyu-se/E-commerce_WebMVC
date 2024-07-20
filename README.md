@@ -1,2 +1,2 @@
-# E-commerce_WebAPI
-Backend for Web API using .NET framework for basic E-Commerce's services
+# E-commerce_WebMVC
+Backend for Web MVC using ASP .NET core framework for basic E-Commerce's services
