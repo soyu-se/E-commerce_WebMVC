@@ -1,0 +1,39 @@
+﻿@{
+	Layout = "_LayoutCustomer";
+}
+
+<!-- Single Page Header start -->
+@RenderSection("BreadCum", required: false)
+<!-- Single Page Header End -->
+<!-- Fruits Shop Start-->
+<div class="container-fluid fruite py-5">
+	<div class="container py-5">
+		<div class="row g-4">
+			<div class="col-lg-12">
+				<div class="row g-4">
+					<div class="col-xl-3">
+
+						@await Html.PartialAsync("_TimKiemPanel")
+
+					</div>
+					<div class="col-6"></div>
+					<div class="col-xl-3">
+					</div>
+				</div>
+				<div class="row g-4">
+					<div class="col-lg-3">
+						<div class="row g-4">
+							@await Component.InvokeAsync("MenuLoai")
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="row g-4 justify-content-center">
+							@RenderBody()
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fruits Shop End-->
